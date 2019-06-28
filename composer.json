@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "l552121229/laravel-admin-ext-map": "~"
+        "l552121229/laravel-admin-ext-map": "*"
     },
     "autoload": {
         "psr-4": {
