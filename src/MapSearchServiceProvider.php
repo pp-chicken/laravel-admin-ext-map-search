@@ -11,8 +11,12 @@ class MapSearchServiceProvider extends ServiceProvider
     /**
      * {@inheritdoc}
      */
-    public function boot()
+    public function boot(MapSearchExtension $extension)
     {
+        if ($views = $extension->views()) {
+            $this->loadViewsFrom($views, 'laravel-admin-map-search');
+        }
+
         Admin::booting(function () {
             Form::extend('map_search', MapSearch::class);
         });

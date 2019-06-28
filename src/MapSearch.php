@@ -12,7 +12,7 @@ use Encore\Admin\Form\Field;
 
 class MapSearch extends Field
 {
-    protected $view = 'admin.form.map-search';
+    protected $view = 'laravel-admin-map-search::map-search';
     /**
      * @var array
      */
