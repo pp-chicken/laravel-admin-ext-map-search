@@ -1,0 +1,30 @@
+{
+    "name": "l552121229/laravel-admin-ext-map-search",
+    "description": "map search extension for laravel-admin.",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "552121229l",
+            "email": "552121229l@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "l552121229/laravel-admin-ext-map": ""
+    },
+    "autoload": {
+        "psr-4": {
+            "l552121229\\laravelAdminExtMapSearch\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "l552121229\\laravelAdminExtMapSearch\\MapSearchServiceProvider"
+            ]
+        }
+    }
+}
